@@ -15,6 +15,8 @@
 
 #include "pack_animal.h"
 
+typedef struct NodeImplementation* Node;
+
 /**
 * Initialisiert eine Karawane. D. h., dass es alle in der Karawane befindlichen Tiere aus der
 * Karawane entfernt und die Karawane als leer kennzeichnet.
