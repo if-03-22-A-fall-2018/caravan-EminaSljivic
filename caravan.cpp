@@ -121,7 +121,7 @@ void unload(Caravan caravan)
 int get_caravan_speed(Caravan caravan)
 {
   if(caravan->head!=0){
-    Node currNode=caravan->head->next;
+    Node currNode=caravan->head;
     int min_speed=get_actual_speed((PackAnimal)currNode->data);
     while(currNode!=0){
       if(min_speed>get_actual_speed((PackAnimal)currNode->data))
@@ -132,4 +132,5 @@ int get_caravan_speed(Caravan caravan)
   }
   return min_speed;
   }
+  return 0;
 }
